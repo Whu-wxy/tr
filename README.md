@@ -6,6 +6,22 @@ Tested under Python3 with *Ubuntu 16.04* and *Ubuntu 18.04*
 #### 说明
 经过半年时间的测试与bug修复，目前本软件运行稳定，可放心在实际项目中使用<br>
 授权协议：<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a>
+<br><br>
+如果喜欢本软件，打开支付宝扫一扫，您的赞助是我们开发的最大动力<br>
+<a href="https://images.cnblogs.com/cnblogs_com/multisilicon/333929/o_200505035053zfb.jpg"><img alt="点击查看图片" width="256" src="https://images.cnblogs.com/cnblogs_com/multisilicon/333929/o_200505035053zfb.jpg" /></a>
+
+#### TODO
+- [ ] Use ONNX Runtime instead of libtorch
+
+<!--
+#### TODO
+- [x] 检测带角度的文本框
+- [x] 识别部分支持带角度的文本框
+- [ ] 优化识别部分代码
+- [ ] 支持表格检测
+- [ ] 识别英文空格
+- [ ] 支持GPU/手机端
+-->
 
 #### Requirements
 <pre>pip install numpy Pillow opencv-python
@@ -23,6 +39,11 @@ sudo python setup.py install
 <pre>python test.py
 python test_angle.py
 </pre>
+
+
+#### 关联项目
++ 若需要Web端调用，推荐参考<a href="https://github.com/alisen39/TrWebOCR">TrWebOCR</a>
+
 
 #### How To Use?
 <pre>import tr
@@ -43,15 +64,6 @@ print(tr.run("imgs/name_card.jpg"))
 print(tr.run_angle("imgs/id_card.jpeg"))
 </pre>
 
-<!--
-#### TODO
-- [x] 检测带角度的文本框
-- [x] 识别部分支持带角度的文本框
-- [ ] 优化识别部分代码
-- [ ] 支持表格检测
-- [ ] 识别英文空格
-- [ ] 支持GPU/手机端
--->
 
 #### 效果展示
 <img src="imgs/output/id_card/1.png" />
